@@ -1,0 +1,104 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: relative;
+    background-color: hsl(270, 20%, 96%);
+    height: 100vh;
+    width: 100%;
+}
+
+
+.decor-spot {
+    position: absolute;
+    height: 124%;
+    width: 35%;
+    border-radius: 0 0 30rem 30rem;
+    background-image: linear-gradient(to bottom, hsl(293, 100%, 63%) 20%, hsl(264, 100%, 61%));
+    top: -35%;
+    left: -8%;
+}
+
+.phone {
+    position: absolute;
+    top: 16%;
+    left: 23%;
+    height: 62%;
+    width: 16%;
+    border-radius: 2rem;
+    padding: .8rem;
+    background-color: white;
+    box-shadow: .9rem .7rem 1.5rem rgba(0,0,0,.10);
+}
+
+.phone__screen {
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(270, 20%, 96%);
+    overflow: hidden;
+    position: relative;
+    font-size: .6rem;
+    color: hsl(276, 55%, 52%);
+}
+
+.phone__screen-cutting {
+    height: 7%;
+    border-radius: 2.5rem;
+    width: 55%;
+    background-color: white;
+    position: absolute;
+    top: -2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.phone__chat-header {
+    height: 15%;
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.phone__chat-message {
+    border-radius: .6rem;
+    padding: 4%;
+    width: 60%;
+}
+
+.phone__chat-message--left {
+    background-color: hsl(270, 20%, 86%);
+    margin: 5% 0 0 4%;
+}
+
+.phone__chat-message--right {
+    background-color: white;
+    margin: 5% 4% 0 auto;
+    border-radius: .6rem .6rem .2rem .6rem;
+}
+
+.phone__chat-img-grp-right {
+    margin: 5% 4% 0 auto;
+    height: 10%;
+}
+
+.phone__chat-image {
+    width: 20%;
+    margin-right: 3%;
+    border-radius: .6rem;
+    float: right;
+}
